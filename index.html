@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Tự học Lập Trình Cùng LHT</title>
+    <link rel="icon" href="http://abctech.vn/wp-content/uploads/2017/06/logo-nen-xanh.jpg" type="image/x-icon" />
+
+</head>
+<body>
+    <header class="header">
+        <ul class="header_list">
+            <li class="header_items header-menu">
+                    <i class="menu-mobile fas fa-bars"></i>
+            </li>
+            <ul class="header_list-mobile">
+
+                <li class="header_items">
+                    <a href="https://lamhuetrung.github.io/index.html">
+                        <i class="fas fa-home"></i>
+                        <span></span>
+                    </a>
+                </li>
+               
+                <li class="header_items">
+                    <a href="#bai-tap">
+                        <i class="fas fa-book"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li class="header_items">
+                    <a href="https://www.facebook.com/T%E1%BB%B1-h%E1%BB%8Dc-l%E1%BA%ADp-Tr%C3%ACnh-c%C3%B9ng-LHT-110968584718753">
+                        <i class="fas fa-question"></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="gird__column-2">
+            <div class="content_LT">
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Problem</h1>
+                    <span class="BT__noi-dung">Reverse A given Number / Reverse a Number .</span>
+                    <span class="BT__noi-dung ">(Tiếng việt: Đảo ngược 1 số nhất định / 1 số bất kì.)</span>
+                    <span class="BT__noi-dung">=> Nguồn: <a href="https://www.programiz.com/c-programming/examples/reverse-number"><span class="link">https://www.programiz.com</span></a>.</span>
+                </div>
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Suggestions</h1>
+                    <span class="BT__noi-dung">+ Sử dụng vòng lặp While.</span>
+                    <span class="BT__noi-dung">+ Lấy từng phải tử sau đó đảo vị trí nó lại.</span>
+                    <h1 class="BT__noi-dung--TD">Nhắc lại kiến thức</h1>
+                    <span class="BT__noi-dung">Vòng lặp While.</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+while (bieu_thuc) {
+    khối lệnh;
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Code mẫu: </h1>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+#include < stdio.h >  
+int main() {
+    int n, t;
+    printf("nhap vao n");
+    scanf("%d", &n);
+    int ans = 0;
+    while(n != 0) {
+        t = n%10;
+        ans = ans*10 + t; 
+        n /= 10;
+    }
+    printf("kết quả sau khi đảo: %d", ans);
+    return 0;
+}
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Xem tiếp video hướng dẫn nếu bạn vẫn chưa hiểu nhé.</span>
+                </div>
+            </div>
+            <div class="content__HD">
+                <h1>Video hướng dẫn </h1>
+                <video class="video" controls>
+                    <source src="./assets/video/video.webm" type="video/mp4">
+                </video>
+                <a href="" class="btn-next">Bài tiếp theo</a>
+            </div>
+    </div>
+</body>
+</html>
